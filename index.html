@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="Click vào đây" onclick="kiemTraNhap(6)" />
+
+    <input
+      type="button"
+      value="Kiểm tra học lực"
+      onclick="xetHocLucSinhVien(8.2)"
+    />
+
+    <input type="button" value="Xuất 100 câu" onclick="xuat10Cau()" />
+
+    <input type="button" value="Click vào While" onclick="vongLapWhile(1)" />
+
+    <input
+      type="button"
+      value="Click vào DoWhile"
+      onclick="vongLapDoWhile(1)"
+    />
+
+    <input
+      type="text"
+      id="test"
+      onfocus="changeColor(1)"
+      onblur="changeColor(3)"
+    />
+
+    <p id="xuat"></p>
+    <select id="chon" onchange="thayDoiChon()">
+      <option>Vietnamese</option>
+      <option>USA</option>
+      <option>France</option>
+    </select>
+
+    <input
+      type="button"
+      id="nut"
+      value="Click vào While"
+      onmouseover="changeColorButton(1)"
+      onmouseout="changeColorButton(2)"
+      onmousedown="changeColorButton(3)"
+      onmouseup="changeColorButton(4)"
+    />
+
+    <p id="noidung"></p>
+    <p class="Demo">thẻ p1</p>
+    <p>thẻ p2</p>
+    <p class="Demo">thẻ p3</p>
+    <input type="button" value="lấy giá trị" onclick="layGiaTri()" />
+
+    <input type="button" value="lấy giá trị tag" onclick="layGiaTriTheP2()" />
+
+    <input type="button" value="lấy giá trị class" onclick="layGiaTriClass()" />
+    <br /><br />
+
+    <form action="#">
+      Số dòng: <input type="text" id="sodong" /> <br />
+      Số cột: <input type="text" id="socot" /> <br /><br />
+      <input type="button" value="Tạo table động" onclick="return taoTable()" />
+    </form>
+    <br />
+    <div id="container"></div>
+
+    <input type="button" value="Thông báo" onclick="xuatThongBao()" />
+
+    <input type="button" value="Xác nhận" onclick="xacNhan()" />
+
+    <input
+      type="button"
+      value="Nhập dữ liệu"
+      onclick="nhapDuLieu()"
+    /><br /><br />
+
+    <form name="form1" action="trangchu.php">
+      Name: <input type="text" name="username" id="username" /><br />
+      Địa chỉ: <input type="text" name="diachi" id="diachi" /><br />
+      SDT: <input type="text" name="sdt" id="sdt" /><br />
+      Enail: <input type="text" name="email" id="email" /><br />
+
+      <input
+        type="submit"
+        value="Kiểm tra nhập"
+        onclick="return kiemTraNhap()"
+      />
+
+      <input
+        type="button"
+        value="Kiểm tra kí tự"
+        onclick="return kiemTraTatCaKiTu('diachi')"
+      />
+
+      <input
+        type="button"
+        value="Kiểm tra số"
+        onclick="return kiemTraTatCaLaSo('sdt')"
+      />
+
+      <input
+        type="button"
+        value="Kiểm tra email"
+        onclick="return kiemTraEmailHopLe('email')"
+      />
+
+      <input
+        type="button"
+        value="Kiểm tra độ dài"
+        onclick="return kiemTraMinMax('username',8,12)"
+      />
+    </form>
+    <p id="thongbao"></p>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+#container {
+  margin: 0 auto;
+  width: 500px;
+  height: 100%;
+  background: rgba(81, 226, 189, 0.93);
+}
+.tab {
+  text-decoration: none;
+  background-color: #c5c55c;
+  display: inline-block;
+  padding: 12px 40px;
+}
+#dangnhap {
+  background-color: #e0d9d9;
+}
+a.tab:hover {
+  background-color: #e0eeee !important;
+}
+#divdangnhap {
+  width: auto;
+  height: 100%;
+  display: none;
+}
+#divdangki {
+  width: auto;
+  height: 100%;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+table {
+  margin: 0 auto;
+}
+.inputCss {
+  padding: 5px;
+  margin: 5px;
+}
+#nutDangki,
+#nutDangnhap {
+  padding: 6px 30px;
+  background-color: yellow;
+  border: none;
+}
+#nutDangki:hover,
+#nutDangnhap:hover {
+  background-color: #e0eeee !important;
+  cursor: pointer;
+}
+#pthongbao {
+  color: red;
+  padding: 20px 0;
+  background-color: yellow;
+  display: none;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
